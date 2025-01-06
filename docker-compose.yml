@@ -2,10 +2,10 @@ version: "3.8"
 
 services:
   server:
-    image: node:14
+    image: gradle:6.8.3-jdk11
     working_dir: /app
     volumes:
       - .:/app
     ports:
       - "3000:3000"
-    command: sh -c "npm install && npm run build && node dist/server.js"
+    command: sh -c "gradle build && gradle start"
