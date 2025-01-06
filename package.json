@@ -1,0 +1,17 @@
+{
+  "name": "node-ts-server",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linting specified\" && exit 0"
+  },
+  "dependencies": {
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.0"
+  }
+}
